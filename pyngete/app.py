@@ -9,14 +9,12 @@ import datetime
 import web
 from web.contrib.template import render_mako
 import PyRSS2Gen
+import simplejson
 
 basedir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, basedir)
 
 import service
-
-
-import simplejson
 
 fp = open('./config.json', 'r')
 config = simplejson.load(fp)
