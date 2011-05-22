@@ -10,6 +10,6 @@
 
 # Run
 
-cd pyngate
+cd pyngate; 
 python app.py
 
