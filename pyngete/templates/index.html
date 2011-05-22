@@ -1,0 +1,32 @@
+<%inherit file="base.html"/>
+
+<%def name="header()">
+${title}
+
+% if ans:
+<h2>Run Results : ${ans}</h2>
+% endif
+</%def>
+
+<%def name="content()">
+<script type="text/javascript">
+</script>
+
+<form method="post" action="/">
+  <input type="text" id="prefix" name="prefix" value="" />
+</br>
+  <input type="text" id="level" name="level" value="" />
+</br>
+  <input type="text" id="title" name="title" value="" />
+</br>
+  <input type="text" id="link" name="link" value="http://" />
+</br>
+  <textarea id="content" name="content"></textarea>
+</br>
+</br>
+  <input type="submit" id="submi" name="submi" value="追加" />
+</form>
+</%def>
+
+<%def name="footer()">
+</%def>
